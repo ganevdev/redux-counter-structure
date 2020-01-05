@@ -1,5 +1,3 @@
-# Create React App Ganevru
+# redux-insurance-company
 
-More about templates: https://create-react-app.dev/docs/custom-templates
-
-Repo: https://github.com/ganevru/cra-template-ganevru#readme
+Based on https://youtu.be/3sjMRS1gJys from https://github.com/StephenGrider

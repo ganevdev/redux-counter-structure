@@ -1,14 +1,24 @@
 import './App.css';
 
 import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import MainContainer from './Main';
+import reducers from './reducers';
+
+const store = createStore(reducers);
 
 const App = () => {
   return (
-    <div className="App">
-      <p>
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <MainContainer />
+      </div>
+    </Provider>
   );
 };
 
