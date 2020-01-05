@@ -1,23 +1,7 @@
-import { DECREMENT, INCREMENT } from '../actions/main-actions';
+import { combineReducers } from 'redux';
 
-const initialState = {
-  count: 0,
-};
+import mainReducer from './main-reducer';
 
-const reducers = (state = initialState, action) => {
-  if (action.type === INCREMENT) {
-    return {
-      count: state.count + 1,
-    };
-  }
-
-  if (action.type === DECREMENT) {
-    return {
-      count: state.count - 1,
-    };
-  }
-
-  return state;
-};
-
-export default reducers;
+export default combineReducers({
+  mainReducer,
+});
