@@ -1,6 +1,6 @@
 {
-  "extends": "react-app",
-  "plugins": ["simple-import-sort", "prettier"],
+  "extends": ["plugin:react-redux/recommended", "react-app"],
+  "plugins": ["react-redux", "simple-import-sort", "prettier"],
   "rules": {
     "prettier/prettier": "warn",
     "simple-import-sort/sort": "warn",

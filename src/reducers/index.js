@@ -1,5 +1,4 @@
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
+import { DECREMENT, INCREMENT } from '../actions/main-actions';
 
 const initialState = {
   count: 0,

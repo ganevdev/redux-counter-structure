@@ -1,16 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-
-const INCREMENT = 'INCREMENT';
-const DECREMENT = 'DECREMENT';
-
-const increment = () => ({
-  type: INCREMENT,
-});
-
-const decrement = () => ({
-  type: DECREMENT,
-});
 
 class Main extends Component {
   render() {
@@ -28,15 +16,4 @@ class Main extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return state;
-};
-
-const mapDispatchToProps = {
-  increment,
-  decrement,
-};
-
-const MainContainer = connect(mapStateToProps, mapDispatchToProps)(Main);
-
-export default MainContainer;
+export default Main;
