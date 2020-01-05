@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import { decrement, increment } from '../actions/main-actions';
 import Main from '../components/Main';
 
-// eslint-disable-next-line
 const mapStateToProps = state => {
-  return state;
+  return state.mainReducer;
 };
 
 const mapDispatchToProps = {

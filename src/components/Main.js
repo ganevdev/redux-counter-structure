@@ -5,7 +5,7 @@ class Main extends Component {
     const { count, increment, decrement } = this.props;
     return (
       <main className="Counter">
-        <p className="count">{count}</p>
+        <h1 className="count">{count}</h1>
         <section className="controls">
           <button onClick={increment}>Increment</button>
           <button onClick={decrement}>Decrement</button>
